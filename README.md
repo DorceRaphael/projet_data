@@ -7,23 +7,22 @@
 <h3 align="center">Projet Data</h3>
 
 <div align="center">
-
   [![Status](https://img.shields.io/badge/status-unfinished-red)]() 
-
 </div>
 
 ---
 
-<p align="center"> Réaliser un site multi page à l’aide de données publiques.
-    <br> 
+<p align="center"> Réaliser un site multi page à l’aide de données publiques. 
 </p>
+
 
 ## 📝 Table of Contents
 - [About](#about)
 - [Technos](#built_using)
 - [Authors](#authors)
 
-## 🧐 About <a name = "about"></a>
+
+## ❔ About <a name = "about"></a>
 Consignes du projet :
 
 
@@ -71,6 +70,5 @@ Objectifs obligatoires :
 
 
 ## ✍️ Collaborateurs <a name = "authors"></a>
-
 * [CHAPUIS Dylan](https://github.com/CDylan-source)
 * [DORCE Raphael](https://github.com/DorceRaphael)
