@@ -1,18 +1,21 @@
 
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="" alt="Projet data"></a>
+ <img width=200px height=200px src="logo.svg" alt="Projet data"></a>
 </p>
 
 <h3 align="center">Projet Data</h3>
 
 <div align="center">
+  
   [![Status](https://img.shields.io/badge/status-unfinished-red)]() 
+  
 </div>
 
 ---
 
-<p align="center"> Réaliser un site multi page à l’aide de données publiques. 
+<p align="center"> Réaliser un site multi page à l’aide de données publiques.
+    <br>
 </p>
 
 
