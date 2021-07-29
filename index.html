@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUSIC DATA</title>
+    <link rel="shortcut icon" type="" href="./images/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--------------------------------------------- SLICK SLIDER -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick-theme.css"
+    />
+
+    <!--------------------------------------------- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!--------------------------------------------- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--------------------------------------------- NAV -->
+
+    <nav id="nav" class="nav" role="navigation">
+      <div class="navbar">
+        <img class="logo" src="./images/logo.svg" alt="" />
+        <!-- MENU TOGGLE BUTTON -->
+        <a
+          class="nav-toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            class="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <g>
+              <line class="menu-icon-bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+              <line class="menu-icon-bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menu-icon-bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menu-icon-bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+              <circle class="menu-icon-circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+      </div>
+      <!-- ACTUAL NAVIGATION MENU -->
+      <ul
+        class="nav-menu"
+        id="menu"
+        tabindex="-1"
+        aria-label="main navigation"
+        hidden
+      >
+        <li class="nav-item"><a href="#" class="nav-link">ACCUEIL</a></li>
+        <li class="nav-item">
+          <a class="accordion nav-link">GENRES</a>
+          <ul class="panel">
+            <li><a href="#">ALTERNATIVE</a></li>
+            <li><a href="#">BLUES</a></li>
+            <li><a href="#">HIP HOP</a></li>
+            <li><a href="#">ROCK</a></li>
+            <li><a href="#">INDIE</a></li>
+            <li><a href="#">METAL</a></li>
+            <li><a href="#">POP</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">À PROPOS</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">CONNEXION</a></li>
+        <img class="logo" src="./images/logo.svg" alt="" />
+      </ul>
+    </nav>
+
+    <!--------------------------------------------- SLIDESHOW -->
+    <section class="slideshow-section">
+      <article class="slideshow-article">
+        <div
+          class="slideshow-img"
+          style="
+            background: url(./images/base_1.jpg) center/cover;
+            filter: brightness(50%);
+          "
+        ></div>
+        <div class="slideshow-text">
+          <h3>MUSIC DATA</h3>
+          <h4>Le meilleur site pour découvrir des musiques de qualité!</h4>
+        </div>
+      </article>
+      <article class="slideshow-article">
+        <div
+          class="slideshow-img"
+          style="
+            background: url(./images/base_2.jpg) center/cover;
+            filter: brightness(50%);
+          "
+        ></div>
+        <div class="slideshow-text">
+          <h3>TEST2</h3>
+          <h4>TEST2</h4>
+        </div>
+      </article>
+      <article class="slideshow-article">
+        <div
+          class="slideshow-img"
+          style="
+            background: url(./images/base_3.jpg) center/cover;
+            filter: brightness(50%);
+          "
+        ></div>
+        <div class="slideshow-text">
+          <h3>TEST3</h3>
+          <h4>TEST3</h4>
+        </div>
+      </article>
+    </section>
+
+    <section class="home-section">
+      <div class="section-center">
+        <h2>À la recherche de <span>MUSIQUE </span>?</h2>
+        <h3>
+          Music Data vous propose une recherche de musique par genre et en
+          fonction de vos envie et de votre mood!
+        </h3>
+        <article class="home-article">
+          <div class="genre-item">
+            <div class="genre-img">
+              <img src="./images/alternative_logo.svg" alt="" />
+            </div>
+            <div class="genre-text">ALTERNATIVE</div>
+          </div>
+          <div class="genre-item">
+            <div class="genre-img">
+              <img src="./images/blues_logo.svg" alt="" />
+            </div>
+            <div class="genre-text">BLUES</div>
+          </div>
+          <div class="genre-item">
+            <div class="genre-img">
+              <img src="./images/hiphop_logo.svg" alt="" />
+            </div>
+            <div class="genre-text">HIP HOP</div>
+          </div>
+          <div class="genre-item">
+            <div class="genre-img">
+              <img src="./images/rock_logo.svg" alt="" />
+            </div>
+            <div class="genre-text">ROCK</div>
+          </div>
+          <div class="genre-item">
+            <div class="genre-img">
+              <img src="./images/indie_logo.svg" alt="" />
+            </div>
+            <div class="genre-text">INDIE</div>
+          </div>
+          <div class="genre-item">
+            <div class="genre-img">
+              <img src="./images/metal_logo.svg" alt="" />
+            </div>
+            <div class="genre-text">METAL</div>
+          </div>
+          <div class="genre-item">
+            <div class="genre-img">
+              <img src="./images/pop_logo.svg" alt="" />
+            </div>
+            <div class="genre-text">POP</div>
+          </div>
+        </article>
+        <h3>Et ce n'est <span>PAS</span> tout...</h3>
+      </div>
+    </section>
+
+    <!--------------------------------------------- ABOUT -->
+    <section class="about-section">
+      <article class="about-article">
+        <div class="about-text">
+          <h2>À <span>PROPOS</span> :</h2>
+          <div class="line">
+            <h3>
+              Choisissez juste un genre de musique parmis la liste que l’on vous
+              propose: alternative, blues, hip hop, indie, metal, pop et rock
+            </h3>
+            <h3>
+              Enfin, vous pouvez choisir de trier les musiques, par titre,
+              artiste, popularité, ainsi que par danceability, energy et tempo.
+            </h3>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="./images/base_16_cropped.png" alt="" />
+        </div>
+      </article>
+    </section>
+
+    <!--------------------------------------------- PARALLAX -->
+    <section class="parallax-section">
+      <!-- <img class="parallax" src="./images/base_11.jpg" alt="image" /> -->
+      <div class="parallax"></div>
+      <p>DANCE LIKE NEVER BEFORE</p>
+    </section>
+
+    <!--------------------------------------------- CONNECTION -->
+    <section class="connection-section">
+      <article class="connection-article">
+        <div class="connection-text">
+          <h2><span>CONNEXION</span> :</h2>
+          <div class="line">
+            <h3>
+              Créez un compte gratuitement pour gerer vos playlists privées et
+              ajouter des chansons!
+            </h3>
+            <a href="#" id="login">Se connecter</a>
+            <h3>
+              Vous n’avez pas de compte? <a href="" id="sign-up">S’incrire.</a>
+            </h3>
+          </div>
+        </div>
+        <div class="connection-img">
+          <img src="./images/base_7.jpg" alt="" />
+        </div>
+      </article>
+    </section>
+
+    <!--------------------------------------------- FOOTER -->
+    <footer>
+      <section class="footer-section">
+        <div class="logo-item">
+          <img class="logo" src="./images/logo.svg" alt="" />
+        </div>
+        <article class="footer-article">
+          <div class="admin">
+            <div class="admin-item">
+              <h2>Dylan Chapuis</h2>
+              <a class="social-icon" href="" target="_blank">
+                <i class="fab fa-github-square"></i>
+              </a>
+              <a class="social-icon" href="" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="admin-item">
+              <h2>Raphaël Dorce</h2>
+              <a
+                class="social-icon"
+                href="https://github.com/DorceRaphael"
+                target="_blank"
+              >
+                <i class="fab fa-github-square"></i>
+              </a>
+              <a
+                class="social-icon"
+                href="https://www.linkedin.com/in/raphael-dorce-524a32148/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="seo">
+            <h3>À PROPOS</h3>
+            <h3>CONNEXION</h3>
+            <h3>MENTIONS LEGALES</h3>
+          </div>
+        </article>
+        <div class="copyright-item"><h4>COPYRIGHT 2021</h4></div>
+      </section>
+    </footer>
+
+    <!--------------------------------------------- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!--------------------------------------------- SIMPLEPARALLAX -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+    <!--------------------------------------------- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--------------------------------------------- SLICK SLIDER -->
+    <script
+      type="text/javascript"
+      src="./slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <!--------------------------------------------- SCRIPT -->
+    <script src="app.js"></script>
+  </body>
+</html>
