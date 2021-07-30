@@ -1,14 +1,8 @@
-// DISPARITION ON SCROLL DOWN
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
-  //   if (prevScrollpos > currentScrollPos) {
-  //     document.querySelector("nav").style.top = "0";
-  //   } else {
-  //     document.querySelector("nav").style.top = "-100px";
-  //   }
   if (window.pageYOffset == 0) {
+    // BLACK BG WHITE BORDER
     document.querySelector("nav").style.backgroundColor = "#0c0c0c00";
     document.querySelector("nav").style.borderBottom = "1px solid #ffffff00";
   } else {
@@ -57,6 +51,7 @@ nav.addEventListener("keydown", (e) => {
   }
 });
 
+// ACCORDION MENU
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -72,6 +67,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// SLICK SLIDER
 $(".slideshow-section").slick({
   dots: true,
   arrows: true,
@@ -90,6 +86,7 @@ $(".slideshow-section").slick({
   ],
 });
 
+// PARALLAX EFFECT
 // var image = document.getElementsByClassName("parallax");
 // new simpleParallax(image, {
 //   delay: 0.6,
