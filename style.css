@@ -282,7 +282,6 @@ nav {
 .slideshow-img {
   width: 100%;
   height: 100vh;
-  filter: brightness(75%);
 }
 
 .slideshow-text {
@@ -291,11 +290,14 @@ nav {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: grid;
+  grid-column: 1fr;
+  justify-items: flex-start;
 }
 
 .slideshow-text h3 {
   font-weight: 900;
-  font-size: 4rem;
+  font-size: 2.75rem;
   text-align: left;
 }
 
@@ -341,6 +343,7 @@ nav {
 }
 
 .slick-dots li button:before {
+  z-index: 15 !important;
   color: white !important;
   opacity: 0.5 !important;
 }
@@ -853,6 +856,12 @@ input:checked + label:before {
   color: #32cdb1;
 }
 
+@media screen and (min-width: 425px) {
+  .slideshow-text h3 {
+    font-size: 3.75rem;
+  }
+}
+
 /*------------------------------------------- RESPONSIVE DESKTOP */
 @media screen and (min-width: 768px) {
   /*------------------------------------------- NAV DESKTOP */
@@ -988,7 +997,7 @@ input:checked + label:before {
   /*------------------------------------------- SLIDESHOW */
   .slideshow-text h3 {
     width: 50%;
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   .slideshow-text h4 {
