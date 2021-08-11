@@ -1,0 +1,24 @@
+apache2 error logs:
+var/log/apache2/error.public.log
+
+MOVE IN VIM:
+
+/ (look for a keyword)
+
+ctrl + f (page down)
+
+ctrl + b (page up)
+
+ctrl + d (scroll window downwards, normally half a a screen)
+
+ctrl + u (scroll window upwards, normally half a a screen)
+
+
+Did you ensure the RewriteEngine is on?
+
+You'll want to verify that the mod is enabled - just look for rewrite.load symlink in /etc/apache2/mods-enabled.
+If not, run sudo a2enmod rewrite to enable it.
+Restart apache using sudo service apache2 restart and provided your .htaccess syntax is correct this will work.
+
+ROUTER:
+Erreur de trajet avec les fichiers quand j'ecris un chemin avec des / (ex: AAA/BBB/CCC bug .css)

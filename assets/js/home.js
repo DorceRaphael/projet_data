@@ -70,7 +70,7 @@ for (i = 0; i < acc.length; i++) {
 // SLICK SLIDER
 $(".slideshow-section").slick({
   dots: true,
-  arrows: true,
+  arrows: false,
   speed: 500,
   fade: true,
   cssEase: "linear",
