@@ -22,3 +22,13 @@ Restart apache using sudo service apache2 restart and provided your .htaccess sy
 
 ROUTER:
 Erreur de trajet avec les fichiers quand j'ecris un chemin avec des / (ex: AAA/BBB/CCC bug .css)
+ob_start();
+ob_get_clean();
+
+c'est TROP PUISSANT!
+
+
+ERREUR GIT parce que dossier images trop lourd:
+git reset HEAD~(nbr de commit)
+
+changer le nom des colonnes comme la table alternative

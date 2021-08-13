@@ -1,24 +1,24 @@
-<?php 
-require './vendor/autoload.php';
+<?php
+include "./vendor/autoload.php";
 $router = new AltoRouter();
-$router->setBasePath('projet_data/');
+$router->setBasePath("/projet_data");
 
-$router->map("GET", "/", "home");
-$router->map("GET", "/contact", "contact");
-$router->map("GET", "/[*:slug]", "genre");
+$router->map("GET", "/", "home", "home");
+$router->map("GET", "/404", "404", "404");
+$router->map("GET", "/[*:slug]", "genre", "genre");
 
 $match = $router->match();
-if (is_array($match)){
-    include "./elements/header.php";
-    if (is_callable($match["target"])){
-        call_user_func_array($match["target"],$match["params"]);
-    }else{
+if (is_array($match)) {
+    if (is_callable($match["target"])) {
+        call_user_func_array($match["target"], $match["params"]);
+    } else {
+        ob_start();
         $params = $match["params"];
-        require "./templates/{$match["target"]}.php";
+        include "./templates/{$match["target"]}.php";
+        $pageContent = ob_get_clean();
     }
-    include "./elements/footer.php";
-}
-else{
+    include "./elements/layout.php";
+} else {
     echo "404";
 }
 ?>

@@ -48,56 +48,66 @@
       <!-- SINGLE GENRE ITEM -->
       <div class="genre-item">
         <div class="genre-img">
-          <img
-            src="./assets/images/alternative_logo.svg"
-            alt="icone de musique alternative"
-          />
+          <a href="<?= $router->generate("genre") ?>alternative">
+          <img src="./assets/images/alternative_logo.svg" alt="icone de musique alternative" />
+          </a>
         </div>
         <div class="genre-text">ALTERNATIVE</div>
       </div>
-      <!-- END OF SINGLE GENRE ITEM -->
+      <!-- SINGLE GENRE ITEM -->
       <div class="genre-item">
         <div class="genre-img">
+          <a href="<?= $router->generate("genre") ?>blues">
           <img src="./assets/images/blues_logo.svg" alt="icone de musique blues" />
+          </a>
         </div>
         <div class="genre-text">BLUES</div>
       </div>
       <div class="genre-item">
         <div class="genre-img">
-          <img
-            src="./assets/images/hiphop_logo.svg"
-            alt="icone de musique hip hop"
-          />
+          <a href="<?= $router->generate("genre") ?>hiphop">
+          <img src="./assets/images/hiphop_logo.svg" alt="icone de musique hiphop" />
+          </a>
         </div>
         <div class="genre-text">HIP HOP</div>
       </div>
       <div class="genre-item">
         <div class="genre-img">
+          <a href="<?= $router->generate("genre") ?>rock">
           <img src="./assets/images/rock_logo.svg" alt="icone de musique rock" />
+          </a>
         </div>
         <div class="genre-text">ROCK</div>
       </div>
       <div class="genre-item">
         <div class="genre-img">
+          <a href="<?= $router->generate("genre") ?>indie">
           <img src="./assets/images/indie_logo.svg" alt="icone de musique indie" />
+          </a>
         </div>
         <div class="genre-text">INDIE</div>
       </div>
       <div class="genre-item">
         <div class="genre-img">
+          <a href="<?= $router->generate("genre") ?>metal">
           <img src="./assets/images/metal_logo.svg" alt="icone de musique metal" />
+          </a>
         </div>
         <div class="genre-text">METAL</div>
       </div>
       <div class="genre-item">
         <div class="genre-img">
+          <a href="<?= $router->generate("genre") ?>pop">
           <img src="./assets/images/pop_logo.svg" alt="icone de musique pop" />
+          </a>
         </div>
         <div class="genre-text">POP</div>
       </div>
       <div class="genre-item">
         <div class="genre-img">
+          <a href="https://www.youtube.com/watch?v=7zbesXqL1kg">
           <i class="fas fa-question"></i>
+          </a>
         </div>
         <div class="genre-text">?????</div>
       </div>
@@ -107,7 +117,7 @@
 </section>
 
 <!--------------------------------------------- ABOUT -->
-<section class="about-section">
+<section class="about-section" id="about">
   <article class="about-article">
     <div class="about-text">
       <h2>À <span>PROPOS</span> :</h2>

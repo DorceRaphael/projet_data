@@ -1,5 +1,8 @@
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
+window.addEventListener("scroll", function () {
+  navBackground();
+});
+function navBackground() {
   var currentScrollPos = window.pageYOffset;
   if (window.pageYOffset == 0) {
     // BLACK BG WHITE BORDER
@@ -10,7 +13,7 @@ window.onscroll = function () {
     document.querySelector("nav").style.borderBottom = "1px solid #ffffff";
   }
   prevScrollpos = currentScrollPos;
-};
+}
 
 const nav = document.querySelector("#nav");
 const menu = document.querySelector("#menu");

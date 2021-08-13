@@ -1,9 +1,8 @@
 <?php
-include "./pdo/connexion.php";
+include "../../pdo/connexion.php";
 session_start();
 // keep the url variable slug in a session variable
-$table = htmlentities($params["slug"]);
-$_SESSION["table"] = $table;
+$table = htmlentities($_SESSION["table"]);
 
 // check the filter selected and chose base filter
 if (isset($_POST["musicfilter"]) && $_POST["musicfilter"] != "") {
@@ -41,7 +40,7 @@ if ($post->nbr !== 0) {
 
     if ($rowTotal > 0) {
         foreach ($musics as $music):
-            include "./public/view/genre_filter_view.php";
+            include "../../public/view/genre_filter_view.php";
         endforeach;
     }
 
@@ -50,7 +49,7 @@ if ($post->nbr !== 0) {
     $rowTotal = $stmt->rowCount();
     $totalPage = ceil($rowTotal / $limit);
 
-    include "./public/view/pagination_btns_view.php";
+    include "../../public/view/pagination_btns_view.php";
 } else {
     header("location:../projet_data/404");
 }

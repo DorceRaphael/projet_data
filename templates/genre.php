@@ -12,7 +12,7 @@
     ></div>
     <!-- END OF SINGLE SLIDE -->
     <div class="slideshow-text">
-      <h3>ALTERNATIVE</h3>
+      <h3><?= $params["slug"] ?></h3>
       <h3>MUSIC</h3>
     </div>
   </article>
@@ -24,7 +24,7 @@
       "
     ></div>
     <div class="slideshow-text">
-      <h3>ALTERNATIVE</h3>
+      <h3><?= $params["slug"] ?></h3>
       <h3>MUSIC</h3>
     </div>
   </article>
@@ -36,7 +36,7 @@
       "
     ></div>
     <div class="slideshow-text">
-      <h3>ALTERNATIVE</h3>
+      <h3><?= $params["slug"] ?></h3>
       <h3>MUSIC</h3>
     </div>
   </article>
@@ -87,10 +87,16 @@
           <h2>BPM</h2>
         </li>
         <div id="table-data">
-            <?php include "./public/model/genre_pagination_model.php";?>
+            <?php include "./public/model/genre_pagination_model.php"; ?>
         </div>
       </ul>
     </div>
   </article>
 </section>
 <button id="top-btn"><i class="fas fa-arrow-up"></i> TOP</button>
+
+<?php ob_start(); ?>
+<script src="./assets/js/genre.js"></script>
+<?php $pageJavascripts = ob_get_clean(); ?>
+
+ ?>

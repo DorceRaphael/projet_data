@@ -15,12 +15,13 @@ filterRadios.forEach((rad) => {
 $(document).on("click", ".pagination li a", function (e) {
   e.preventDefault();
   pageId = $(this).attr("id");
+  console.log(pageId);
   loadData();
 });
 
 function loadData() {
   $.ajax({
-    url: "pagination.php",
+    url: "./public/model/genre_pagination_ajax_model.php",
     type: "POST",
     cache: false,
     data: { page_no: pageId, musicfilter: filter },
@@ -32,11 +33,11 @@ function loadData() {
 
 // When the user scrolls down 1000px from the top of the document, show the button
 var topBtn = document.querySelector("#top-btn");
-window.onscroll = function () {
-  scrollFunction();
-};
+window.addEventListener("scroll", function () {
+  toTopBtn();
+});
 
-function scrollFunction() {
+function toTopBtn() {
   if (
     document.body.scrollTop > 1000 ||
     document.documentElement.scrollTop > 1000
@@ -52,6 +53,10 @@ topBtn.addEventListener("click", () => {
 });
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = document
+    .querySelector(".slideshow-section")
+    .getBoundingClientRect().height;
+  document.documentElement.scrollTop = document
+    .querySelector(".slideshow-section")
+    .getBoundingClientRect().height;
 }
