@@ -9,6 +9,6 @@ for ($i=1; $i <= $totalPage ; $i++) {
     }
     $output.="<li class='page-item $active'><a class='page-link' id='$i' href=''>$i</a></li>";
 }
-$output .= "</ul>";
+$output.= "</ul>";
 echo $output;
 ?>

@@ -6,7 +6,8 @@
   <article class="slideshow-article">
     <div
       class="slideshow-img"
-      style="background: url(./assets/images/base_1.jpg) center/cover;"
+      style="background-image: url(./assets/images/base_1_cropped.jpg);
+      "
     ></div>
     <div class="slideshow-text">
       <h3>MUSIC DATA</h3>
@@ -17,7 +18,8 @@
   <article class="slideshow-article">
     <div
       class="slideshow-img"
-      style="background: url(./assets/images/pop_1.jpg) center/cover;"
+      style="background-image: url(./assets/images/base_17_cropped.jpg);
+      "
     ></div>
     <div class="slideshow-text">
       <h3>NON STOP</h3>
@@ -27,7 +29,8 @@
   <article class="slideshow-article">
     <div
       class="slideshow-img"
-      style="background: url(./assets/images/base_5.jpg) center/cover;"
+      style="background-image: url(./assets/images/base_5_cropped.jpg);
+      "
     ></div>
     <div class="slideshow-text">
       <h3>NO LIMIT</h3>

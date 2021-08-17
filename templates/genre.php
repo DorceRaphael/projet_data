@@ -7,20 +7,7 @@
     <div
       class="slideshow-img"
       style="
-        background: url(./assets/images/alternative_3_cropped.jpg) center/cover;
-      "
-    ></div>
-    <!-- END OF SINGLE SLIDE -->
-    <div class="slideshow-text">
-      <h3><?= $params["slug"] ?></h3>
-      <h3>MUSIC</h3>
-    </div>
-  </article>
-  <article class="slideshow-article">
-    <div
-      class="slideshow-img"
-      style="
-        background: url(./assets/images/alternative_1_cropped.jpg) center/cover;
+        background-image: url(./assets/images/<?= $params["slug"] ?>_1_cropped.jpg);
       "
     ></div>
     <div class="slideshow-text">
@@ -28,11 +15,25 @@
       <h3>MUSIC</h3>
     </div>
   </article>
+  <!-- SINGLE SLIDE -->
   <article class="slideshow-article">
     <div
       class="slideshow-img"
       style="
-        background: url(./assets/images/alternative_2_cropped.jpg) center/cover;
+        background-image: url(./assets/images/<?= $params["slug"] ?>_2_cropped.jpg);
+      "
+    ></div>
+    <div class="slideshow-text">
+      <h3><?= $params["slug"] ?></h3>
+      <h3>MUSIC</h3>
+    </div>
+  </article>
+  <!-- SINGLE SLIDE -->
+  <article class="slideshow-article">
+    <div
+      class="slideshow-img"
+      style="
+        background-image: url(./assets/images/<?= $params["slug"] ?>_3_cropped.jpg);
       "
     ></div>
     <div class="slideshow-text">
@@ -49,26 +50,32 @@
     <div class="filter">
       <h2>Trier par:</h2>
       <div class="select" tabindex="1">
+        <!-- SINGLE FILTER -->
         <input name="filter" type="radio" id="opt1" checked />
         <label for="opt1" class="option" value="danceability DESC"
           >DANCEABILITY <i class="fas fa-arrow-down"></i
         ></label>
+        <!-- SINGLE FILTER -->
         <input name="filter" type="radio" id="opt2"/>
         <label for="opt2" class="option" value="tempo DESC"
           >TEMPO <i class="fas fa-arrow-down"></i
         ></label>
+        <!-- SINGLE FILTER -->
         <input name="filter" type="radio" id="opt3"/>
         <label for="opt3" class="option" value="valence DESC"
           >VALENCE <i class="fas fa-arrow-down"></i
         ></label>
+        <!-- SINGLE FILTER -->
         <input name="filter" type="radio" id="opt4"/>
         <label for="opt4" class="option" value="danceability ASC"
           >DANCEABILITY <i class="fas fa-arrow-up"></i
         ></label>
+        <!-- SINGLE FILTER -->
         <input name="filter" type="radio" id="opt5"/>
         <label for="opt5" class="option" value="tempo ASC"
           >TEMPO <i class="fas fa-arrow-up"></i
         ></label>
+        <!-- SINGLE FILTER -->
         <input name="filter" type="radio" id="opt6"/>
         <label for="opt6" class="option" value="valence ASC"
           >VALENCE <i class="fas fa-arrow-up"></i
@@ -87,7 +94,7 @@
           <h2>BPM</h2>
         </li>
         <div id="table-data">
-            <?php include "./public/model/genre_pagination_model.php"; ?>
+            <?php include "./public/controller/genre_pagination_controller.php"; ?>
         </div>
       </ul>
     </div>
@@ -98,5 +105,3 @@
 <?php ob_start(); ?>
 <script src="./assets/js/genre.js"></script>
 <?php $pageJavascripts = ob_get_clean(); ?>
-
- ?>

@@ -24,32 +24,15 @@ if (isset($_POST["page_no"])) {
 $offset = ($page_no - 1) * $limit;
 
 // check if table exist by checking the count of the named table in the database
-$stmt = $pdo->prepare(
-    "SELECT COUNT(*) nbr FROM information_schema.tables  WHERE table_schema = 'spotify' AND table_name = '$table'"
-);
-$stmt->execute([]);
-$post = $stmt->fetch();
+include "./public/model/check_tables_model.php";
 
 // if count !== 0 show the results else go to page 404
 if ($post->nbr !== 0) {
-    $stmt = $pdo->prepare(
-        "SELECT * FROM $table ORDER BY $musicFilter LIMIT $offset, $limit"
-    );
-    $stmt->execute([]);
-    $musics = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    $rowTotal = $stmt->rowCount();
-
-    if ($rowTotal > 0) {
-        foreach ($musics as $music):
-            include "./public/view/genre_filter_view.php";
-        endforeach;
+    include "./public/model/genre_musics_model.php";
+    foreach ($musics as $music) {
+        include "./public/view/genre_filter_view.php";
     }
-
-    $stmt = $pdo->prepare("SELECT * FROM alternative");
-    $stmt->execute([]);
-    $rowTotal = $stmt->rowCount();
-    $totalPage = ceil($rowTotal / $limit);
-
+    include "./public/model/rowcount_model.php";
     include "./public/view/pagination_btns_view.php";
 } else {
     header("location:../projet_data/404");

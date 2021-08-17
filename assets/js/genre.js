@@ -21,7 +21,7 @@ $(document).on("click", ".pagination li a", function (e) {
 
 function loadData() {
   $.ajax({
-    url: "./public/model/genre_pagination_ajax_model.php",
+    url: "./public/controller/genre_pagination_ajax_controller.php",
     type: "POST",
     cache: false,
     data: { page_no: pageId, musicfilter: filter },

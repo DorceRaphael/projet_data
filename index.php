@@ -5,7 +5,7 @@ $router->setBasePath("/projet_data");
 
 $router->map("GET", "/", "home", "home");
 $router->map("GET", "/404", "404", "404");
-$router->map("GET", "/[*:slug]", "genre", "genre");
+$router->map("GET", "/[a:slug]", "genre", "genre");
 
 $match = $router->match();
 if (is_array($match)) {
@@ -19,6 +19,6 @@ if (is_array($match)) {
     }
     include "./elements/layout.php";
 } else {
-    echo "404";
+    header("location:../../projet_data/404");
 }
 ?>

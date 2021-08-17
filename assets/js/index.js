@@ -1,3 +1,4 @@
+// CE FICHIER COMBINE TOUS LES AUTRES FICHIERS ET LES ENTOURE DE TRY CATCH POUR EVITER LES EVENTLISTENER OF NULL
 var prevScrollpos = window.pageYOffset;
 window.addEventListener("scroll", function () {
   navBackground();
