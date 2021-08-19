@@ -41,7 +41,7 @@
 
 <!--------------------------------------------- HOME -->
 <section class="home-section">
-  <div class="section-center">
+  <div class="section-center"  data-aos="fade-up">
     <h2>À la recherche de <span>MUSIQUE </span>?</h2>
     <h3>
       Music Data vous propose une recherche de musique par genre et en
@@ -120,8 +120,8 @@
 </section>
 
 <!--------------------------------------------- ABOUT -->
-<section class="about-section" id="about">
-  <article class="about-article">
+<section class="about-section" id="about" >
+  <article class="about-article" data-aos="fade-up">
     <div class="about-text">
       <h2>À <span>PROPOS</span> :</h2>
       <div class="line">
@@ -137,7 +137,7 @@
     </div>
     <div class="about-img">
       <img
-        src="./assets/images/base_16.jpg"
+        src="./assets/images/base_16_cropped.jpg"
         alt="femme detendue ecoutant de la musique"
       />
     </div>
@@ -145,15 +145,15 @@
 </section>
 
 <!--------------------------------------------- PARALLAX -->
-<section class="parallax-section">
+<section class="parallax-section" data-aos="fade-up">
   <!-- <img class="parallax" src="./assets/images/base_11.jpg" alt="image" /> -->
   <div class="parallax"></div>
   <p>DANCE LIKE NEVER BEFORE</p>
 </section>
 
 <!--------------------------------------------- CONNECTION -->
-<section class="connection-section">
-  <article class="connection-article">
+<section class="connection-section" >
+  <article class="connection-article" data-aos="fade-up">
     <div class="connection-text">
       <h2><span>CONNEXION</span> :</h2>
       <div class="line">
@@ -169,7 +169,7 @@
     </div>
     <div class="connection-img">
       <img
-        src="./assets/images/base_7.jpg"
+        src="./assets/images/base_7_cropped.jpg"
         alt="femme detendue sur son telephone"
       />
     </div>

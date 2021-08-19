@@ -4,6 +4,7 @@ $router = new AltoRouter();
 $router->setBasePath("/projet_data");
 
 $router->map("GET", "/", "home", "home");
+$router->map("GET", "/mentions_legales", "legal", "legal");
 $router->map("GET", "/404", "404", "404");
 $router->map("GET", "/[a:slug]", "genre", "genre");
 

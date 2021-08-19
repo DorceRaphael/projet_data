@@ -1,0 +1,18 @@
+.legal-section {
+  padding: 8rem 0;
+}
+
+.legal-section h2 {
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+.legal-section h2 span {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #32cdb1;
+}
+
+.legal-section h4 {
+  margin-top: 2.5rem;
+}

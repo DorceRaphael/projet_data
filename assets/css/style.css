@@ -33,6 +33,7 @@ button {
   font-weight: 300;
   font-size: 1rem;
   letter-spacing: 0.05rem;
+  color: white;
 }
 
 input[type="submit"],
@@ -111,6 +112,7 @@ nav {
   filter: invert(96%) sepia(0%) saturate(7491%) hue-rotate(350deg)
     brightness(104%) contrast(107%);
   width: 4rem;
+  cursor: pointer;
 }
 
 .nav-toggle {
@@ -668,12 +670,16 @@ nav {
   width: 15rem;
   grid-template-columns: 1fr;
   align-items: center;
-  /* justify-self: flex-end; */
   row-gap: 0.5rem;
 }
 
-.seo h3 {
+.seo a {
+  color: white;
   font-size: 0.75rem;
+}
+
+.seo a:hover {
+  color: #32cdb1;
 }
 
 .copyright-item {

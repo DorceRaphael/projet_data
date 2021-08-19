@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="music exploration">
+    <meta name="keywords" content="music, alternative, hiphop, blues, pop, rock, metal">
+    <meta name="author" content="Dylan Chapuis Raphael Dorce">
     <title>MUSIC DATA</title>
     <link rel="shortcut icon" type="" href="./assets/images/logo.svg" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <?= $pageCss ?? "" ?>
     <!--------------------------------------------- SLICK SLIDER -->
     <link
       rel="stylesheet"
@@ -68,10 +72,14 @@
               "home"
           ) ?>#about" class="nav-link">À PROPOS</a></li>
           <li class="nav-item"><a href="#" class="nav-link">CONNEXION</a></li>
-          <img class="logo" src="./assets/images/logo.svg" alt="" />
+          <a href="<?= $router->generate("home") ?>">
+            <img class="logo" src="./assets/images/logo.svg" alt=""/>
+          </a>
         </ul>
         <div class="navbar">
-          <img class="logo" src="./assets/images/logo.svg" alt="" />
+          <a href="<?= $router->generate("home") ?>">
+            <img class="logo" src="./assets/images/logo.svg" alt=""/>
+          </a>
           <!-- MENU TOGGLE BUTTON -->
           <a
             href="#nav"
@@ -126,7 +134,9 @@
       <!-- NAV DESKTOP -->
       <section class="nav-desktop-section">
         <div class="navbar-desktop">
-          <img class="logo" src="./assets/images/logo.svg" alt="" />
+          <a href="<?= $router->generate("home") ?>">
+            <img class="logo" src="./assets/images/logo.svg" alt=""/>
+          </a>
           <ul>
             <li><a href="<?= $router->generate("home") ?>">ACCUEIL</a></li>
             <li>
@@ -164,10 +174,12 @@
         <!--------------------------------------------- FOOTER -->
     <footer>
       <section class="footer-section">
-        <div class="logo-item">
-          <img class="logo" src="./assets/images/logo.svg" alt="" />
+        <div class="logo-item" data-aos="fade-up">
+          <a href="<?= $router->generate("home") ?>">
+            <img class="logo" src="./assets/images/logo.svg" alt=""/>
+          </a>
         </div>
-        <article class="footer-article">
+        <article class="footer-article" data-aos="fade-up">
           <div class="admin">
             <div class="admin-item">
               <h2>Dylan Chapuis</h2>
@@ -197,19 +209,19 @@
             </div>
           </div>
           <div class="seo">
-            <h3>À PROPOS</h3>
-            <h3>CONNEXION</h3>
-            <h3>MENTIONS LEGALES</h3>
+            <a href="<?= $router->generate("home") ?>#about">À PROPOS</a>
+            <a href="<?= $router->generate("home") ?>">CONNEXION</a>
+            <a href="<?= $router->generate("legal") ?>">MENTIONS LEGALES</a>
           </div>
         </article>
-        <div class="copyright-item"><h4>COPYRIGHT 2021</h4></div>
+        <div class="copyright-item" ><h4>COPYRIGHT 2021</h4></div>
       </section>
     </footer>
 
     <!--------------------------------------------- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({ offset: 120, once: true, duration: 500 });
     </script>
 
     <!--------------------------------------------- JQUERY -->

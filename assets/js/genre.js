@@ -2,6 +2,7 @@ let filter = "";
 let pageId = 1;
 const filterRadios = document.querySelectorAll(".option");
 
+// filter
 filterRadios.forEach((rad) => {
   rad.addEventListener("click", function () {
     filter = this.getAttribute("value");

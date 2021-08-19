@@ -1,0 +1,3 @@
+#Exclusion d'aucune page 
+User-Agent : *
+Disallow: /
