@@ -9,7 +9,7 @@
   <article class="slideshow-article">
     <div
       class="slideshow-img"
-      style="background-image: url(./assets/images/base_2_cropped.jpg);
+      style="background-image: url(./assets/images/base_2_cropped.jpeg);
       "
     ></div>
     <div class="slideshow-text">
@@ -21,7 +21,7 @@
   <article class="slideshow-article">
     <div
       class="slideshow-img"
-      style="background-image: url(./assets/images/base_3_cropped.jpg);
+      style="background-image: url(./assets/images/base_3_cropped.jpeg);
       "
     ></div>
     <div class="slideshow-text">
@@ -32,7 +32,7 @@
   <article class="slideshow-article">
     <div
       class="slideshow-img"
-      style="background-image: url(./assets/images/base_13_cropped.jpg);
+      style="background-image: url(./assets/images/base_13_cropped.jpeg);
       "
     ></div>
     <div class="slideshow-text">

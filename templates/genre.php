@@ -7,7 +7,7 @@
     <div
       class="slideshow-img"
       style="
-        background-image: url(./assets/images/<?= $params["slug"] ?>_1_cropped.jpg);
+        background-image: url(./assets/images/<?= $params["slug"] ?>_1_cropped.jpeg);
       "
     ></div>
     <div class="slideshow-text">
@@ -20,7 +20,7 @@
     <div
       class="slideshow-img"
       style="
-        background-image: url(./assets/images/<?= $params["slug"] ?>_2_cropped.jpg);
+        background-image: url(./assets/images/<?= $params["slug"] ?>_2_cropped.jpeg);
       "
     ></div>
     <div class="slideshow-text">
@@ -33,7 +33,7 @@
     <div
       class="slideshow-img"
       style="
-        background-image: url(./assets/images/<?= $params["slug"] ?>_3_cropped.jpg);
+        background-image: url(./assets/images/<?= $params["slug"] ?>_3_cropped.jpeg);
       "
     ></div>
     <div class="slideshow-text">
@@ -51,34 +51,44 @@
       <h2>Trier par:</h2>
       <div class="select" tabindex="1">
         <!-- SINGLE FILTER -->
-        <input name="filter" type="radio" id="opt1" checked />
-        <label for="opt1" class="option" value="danceability DESC"
+        <input class="filter-btn" name="filter" type="radio" id="danceability-desc" checked/>
+        <label for="danceability-desc" class="option" value="danceability DESC"
           >DANCEABILITY <i class="fas fa-arrow-down"></i
         ></label>
         <!-- SINGLE FILTER -->
-        <input name="filter" type="radio" id="opt2"/>
-        <label for="opt2" class="option" value="tempo DESC"
-          >TEMPO <i class="fas fa-arrow-down"></i
-        ></label>
-        <!-- SINGLE FILTER -->
-        <input name="filter" type="radio" id="opt3"/>
-        <label for="opt3" class="option" value="valence DESC"
+        <input class="filter-btn" name="filter" type="radio" id="valence-desc"/>
+        <label for="valence-desc" class="option" value="valence DESC"
           >VALENCE <i class="fas fa-arrow-down"></i
         ></label>
         <!-- SINGLE FILTER -->
-        <input name="filter" type="radio" id="opt4"/>
-        <label for="opt4" class="option" value="danceability ASC"
+        <input class="filter-btn" name="filter" type="radio" id="tempo-desc"/>
+        <label for="tempo-desc" class="option" value="tempo DESC"
+          >TEMPO <i class="fas fa-arrow-down"></i
+        ></label>
+        <!-- SINGLE FILTER -->
+        <input class="filter-btn" name="filter" type="radio" id="popularity-desc"/>
+        <label for="popularity-desc" class="option" value="popularity DESC"
+          >POPULARITY <i class="fas fa-arrow-down"></i
+        ></label>
+        <!-- SINGLE FILTER -->
+        <input class="filter-btn" name="filter" type="radio" id="danceability-asc"/>
+        <label for="danceability-asc" class="option" value="danceability ASC"
           >DANCEABILITY <i class="fas fa-arrow-up"></i
         ></label>
         <!-- SINGLE FILTER -->
-        <input name="filter" type="radio" id="opt5"/>
-        <label for="opt5" class="option" value="tempo ASC"
+        <input class="filter-btn" name="filter" type="radio" id="valence-asc"/>
+        <label for="valence-asc" class="option" value="valence ASC"
+          >VALENCE <i class="fas fa-arrow-up"></i
+        ></label>
+        <!-- SINGLE FILTER -->
+        <input class="filter-btn" name="filter" type="radio" id="tempo-asc"/>
+        <label for="tempo-asc" class="option" value="tempo ASC"
           >TEMPO <i class="fas fa-arrow-up"></i
         ></label>
         <!-- SINGLE FILTER -->
-        <input name="filter" type="radio" id="opt6"/>
-        <label for="opt6" class="option" value="valence ASC"
-          >VALENCE <i class="fas fa-arrow-up"></i
+        <input class="filter-btn" name="filter" type="radio" id="popularity-asc"/>
+        <label for="popularity-asc" class="option" value="popularity ASC"
+          >POPULARITY <i class="fas fa-arrow-up"></i
         ></label>
       </div>
     </div>
@@ -87,11 +97,11 @@
         <li class="genre-results-item" href="">
           <h2>TITRE</h2>
           <h2>ARTISTE</h2>
-          <h2>PP</h2>
-          <h2>LIEN</h2>
           <h2>DANCE</h2>
           <h2>VALENCE</h2>
-          <h2>BPM</h2>
+          <h2>TEMPO</h2>
+          <h2>POPUL.</h2>
+          <h2>LIEN</h2>
         </li>
         <div id="table-data">
             <?php include "./public/controller/genre_pagination_controller.php"; ?>
@@ -103,5 +113,5 @@
 <button id="top-btn"><i class="fas fa-arrow-up"></i> TOP</button>
 
 <?php ob_start(); ?>
-<script src="./assets/js/genre.js"></script>
+<script src="./assets/dist/genre.js"></script>
 <?php $pageJavascripts = ob_get_clean(); ?>

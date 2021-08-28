@@ -7,6 +7,7 @@
     <meta name="description" content="music exploration">
     <meta name="keywords" content="music, alternative, hiphop, blues, pop, rock, metal">
     <meta name="author" content="Dylan Chapuis Raphael Dorce">
+    <meta property="og:image" content="./assets/images/logo.svg">
     <title>MUSIC DATA</title>
     <link rel="shortcut icon" type="" href="./assets/images/logo.svg" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -73,12 +74,12 @@
           ) ?>#about" class="nav-link">À PROPOS</a></li>
           <li class="nav-item"><a href="#" class="nav-link">CONNEXION</a></li>
           <a href="<?= $router->generate("home") ?>">
-            <img class="logo" src="./assets/images/logo.svg" alt=""/>
+            <img class="logo" src="./assets/images/logo.svg" alt="logo du site music data"/>
           </a>
         </ul>
         <div class="navbar">
           <a href="<?= $router->generate("home") ?>">
-            <img class="logo" src="./assets/images/logo.svg" alt=""/>
+            <img class="logo" src="./assets/images/logo.svg" alt="logo du site music data"/>
           </a>
           <!-- MENU TOGGLE BUTTON -->
           <a
@@ -135,7 +136,7 @@
       <section class="nav-desktop-section">
         <div class="navbar-desktop">
           <a href="<?= $router->generate("home") ?>">
-            <img class="logo" src="./assets/images/logo.svg" alt=""/>
+            <img class="logo" src="./assets/images/logo.svg" alt="logo du site music data"/>
           </a>
           <ul>
             <li><a href="<?= $router->generate("home") ?>">ACCUEIL</a></li>
@@ -160,7 +161,7 @@
             ) ?>#about">À PROPOS</a></li>
             <li><a href="#">CONNEXION</a></li>
             <li>
-              <a class="social-icon" href="" target="_blank">
+              <a class="social-icon" href="https://github.com/DorceRaphael/projet_data" target="_blank">
                 <i class="fab fa-github-square"></i>
               </a>
             </li>
@@ -176,17 +177,17 @@
       <section class="footer-section">
         <div class="logo-item" data-aos="fade-up">
           <a href="<?= $router->generate("home") ?>">
-            <img class="logo" src="./assets/images/logo.svg" alt=""/>
+            <img class="logo" src="./assets/images/logo.svg" alt="logo du site music data"/>
           </a>
         </div>
         <article class="footer-article" data-aos="fade-up">
           <div class="admin">
             <div class="admin-item">
               <h2>Dylan Chapuis</h2>
-              <a class="social-icon" href="" target="_blank">
+              <a class="social-icon" href="https://github.com/CDylan-source" target="_blank">
                 <i class="fab fa-github-square"></i>
               </a>
-              <a class="social-icon" href="" target="_blank">
+              <a class="social-icon" href="https://www.linkedin.com/in/chapuis-dylan-373679210/" target="_blank">
                 <i class="fab fa-linkedin"></i>
               </a>
             </div>
@@ -218,23 +219,26 @@
       </section>
     </footer>
 
+    <!--------------------------------------------- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!--------------------------------------------- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({ offset: 120, once: true, duration: 500 });
     </script>
 
-    <!--------------------------------------------- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <!--------------------------------------------- SLICK SLIDER -->
     <script
       type="text/javascript"
       src="./assets/slick-1.8.1/slick/slick.min.js"
     ></script>
+    
+    <!--------------------------------------------- PARALLAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
     <!--------------------------------------------- SCRIPTS -->
-    <script src="./assets/js/home.js"></script>
+    <script src="./assets/dist/home.js"></script>
     <?= $pageJavascripts ?? "" ?>
   </body>
 </html>
