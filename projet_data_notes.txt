@@ -32,3 +32,7 @@ ERREUR GIT parce que dossier images trop lourd:
 git reset HEAD~(nbr de commit)
 
 changer le nom des colonnes comme la table alternative
+
+INCREASE PHP UPLOAD SIZE
+upload_max_filesize
+post_max_size

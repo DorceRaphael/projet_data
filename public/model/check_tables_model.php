@@ -1,7 +1,7 @@
 <?php
 $stmt = $pdo->prepare(
-    "SELECT COUNT(*) nbr FROM information_schema.tables  WHERE table_schema = 'raphaeld_spotify' AND table_name = '$table'"
+    "SELECT COUNT(*) nbr FROM information_schema.tables  WHERE table_schema = 'spotify' AND table_name = ?"
 );
-$stmt->execute([]);
+$stmt->execute([$table]);
 $post = $stmt->fetch();
 ?>

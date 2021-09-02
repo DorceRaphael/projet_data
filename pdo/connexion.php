@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "spotifyman";
-$password = "123456";
-$dbname = "spotify";
+$user = "raphaeld";
+$password = "4kfd4p1f3wHgjg==";
+$dbname = "raphaeld_spotify";
 $charset = "utf8";
 
 //Data Source Name

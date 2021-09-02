@@ -94,6 +94,15 @@ body::-webkit-scrollbar-thumb {
 
 /*------------------------------------------- NAV */
 
+h1 {
+  position: absolute;
+  visibility: hidden;
+  z-index: -9999;
+  opacity: 0;
+  left: 0px;
+  bottom: 0px;
+}
+
 .nav-desktop-section {
   display: none;
 }
