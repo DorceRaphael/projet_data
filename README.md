@@ -8,7 +8,7 @@
 
 <div align="center">
   
-  [![Status](https://img.shields.io/badge/status-unfinished-red)]() 
+  [![Status](https://img.shields.io/badge/status-finished-green)]() 
   
 </div>
 
