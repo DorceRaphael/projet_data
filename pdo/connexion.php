@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "raphaeld";
-$password = "4kfd4p1f3wHgjg==";
-$dbname = "raphaeld_spotify";
+$user = "spotifyman";
+$password = "123456";
+$dbname = "spotify";
 $charset = "utf8";
 
 //Data Source Name
@@ -12,5 +12,3 @@ $dsn = "mysql:host=" . $host . ";dbname=" . $dbname . ";charset=" . $charset;
 $pdo = new PDO($dsn, $user, $password);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-
-?>

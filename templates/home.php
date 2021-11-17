@@ -1,7 +1,8 @@
 <!--------------------------------------------- SLIDESHOW -->
 <!-- BLACK VIGNETTE -->
 <div class="vignette"></div>
-<section class="slideshow-section">
+<section class="slideshow-section" >
+  <div id="slick-slider">
   <!-- SINGLE SLIDE -->
   <article class="slideshow-article">
     <div
@@ -37,6 +38,7 @@
       <h4>112 ans. La durée totale de toutes les musiques disponibles!</h4>
     </div>
   </article>
+  </div>
 </section>
 
 <!--------------------------------------------- HOME -->
@@ -45,7 +47,7 @@
     <h2>À la recherche de <span>MUSIQUE </span>?</h2>
     <h3>
       Music Data vous propose une recherche de musique par genre et en
-      fonction de vos envie et de votre mood!
+      fonction de vos envies et de votre mood!
     </h3>
     <article class="home-article">
       <!-- SINGLE GENRE ITEM -->
@@ -156,7 +158,7 @@
       <h2><span>CONNEXION</span> :</h2>
       <div class="line">
         <h3>
-          Créez un compte gratuitement pour gerer vos playlists privées et
+          Créez un compte gratuitement pour gérer vos playlists privées et
           ajouter des chansons!
         </h3>
         <a href="" id="login">Se connecter</a>

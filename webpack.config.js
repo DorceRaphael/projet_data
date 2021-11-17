@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./assets/js/home_prod.js",
+  entry: "./assets/js/main_prod.js",
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   module: {
     rules: [
@@ -18,7 +18,7 @@ module.exports = {
     ],
   },
   output: {
-    filename: "home.js",
+    filename: "main.js",
     path: path.resolve(__dirname, "./assets/dist"),
   },
 };

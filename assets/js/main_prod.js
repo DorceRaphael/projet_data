@@ -71,16 +71,16 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // SLICK SLIDER
-$(".slideshow-section").slick({
+$("#slick-slider").slick({
   dots: true,
-  arrows: false,
+  arrows: true,
   speed: 500,
   fade: true,
   cssEase: "linear",
   autoplay: true,
   autoplaySpeed: 5000,
-  prevArrow: '<p class="prev"><</p>',
-  nextArrow: '<p class="next">></p>',
+  prevArrow: "<button class='slick-prev'></button>",
+  nextArrow: "<button class='slick-next'></button>",
   responsive: [
     {
       breakpoint: 768,

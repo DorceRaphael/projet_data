@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
 /*------------------------------------------- BASE */
 
@@ -348,48 +349,78 @@ nav {
   text-align: left;
 }
 
-.prev {
-  position: absolute;
-  left: 0rem;
-  top: 50%;
-  height: 5.5rem;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 15;
-  font-size: 3.5rem;
-  transition: all 0.5s;
+/* SLICK ARROWS */
+
+.slick-arrow{
+  position: absolute !important;
+  top: 50% !important;
+  height: 5.5rem !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  z-index: 15 !important;
+  font-size: 3.5rem !important;
+  transition: all 0.2s !important;
 }
-.prev:hover {
-  color: #32cdb1;
+.slick-arrow:hover{
+  background: #1d7c6b !important;
 }
 
-.next {
-  position: absolute;
-  right: 0rem;
-  top: 50%;
-  height: 5.5rem;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 15;
-  font-size: 3.5rem;
-  transition: all 0.5s;
+.slick-prev {
+  left: 0rem !important;
 }
-.next:hover {
-  color: #32cdb1;
+
+.slick-next {
+  right: 0rem !important;
 }
+
+.slick-arrow::before {
+  color:white !important;
+    font-family: "Font Awesome 5 Free" !important; /* This is the correct font-family*/
+    font-style: normal !important;
+    font-weight: 900 !important;
+    font-size: 20px !important;
+}
+
+.slick-prev::before {
+  content: '\f053' !important; 
+}
+
+.slick-next::before {
+  content: '\f054' !important;
+}
+
+/* SLICK DOTS */
 
 .slick-dots {
-  bottom: 2rem !important;
+  /* position: unset !important; */
+  z-index: 2;
+  bottom: 0 !important;
+  display: flex !important;
+  height: 25px !important;
 }
-.slick-dots li button:before {
-  z-index: 15 !important;
-  color: white !important;
-  opacity: 0.5 !important;
+
+.slick-dots li {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
 }
-.slick-dots li.slick-active button:before {
-  color: white !important;
-  opacity: 1 !important;
+
+.slick-dots li button {
+  width: 100% !important;
+  height: 100% !important;
+  background: #333333 !important;
+  transition: all 0.2s ease-in-out;
 }
-.slick-dotted.slick-slider {
-  margin-bottom: 0px !important;
+
+.slick-dots li button:hover{
+  background: #1d7c6b !important;
+}
+
+.slick-dots li.slick-active button {
+  background: #32cdb1 !important;
+}
+
+.slick-dots li button:before{
+  display: none !important;
 }
 
 /*------------------------------------------- HOME */
