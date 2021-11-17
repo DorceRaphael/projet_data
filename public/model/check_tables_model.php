@@ -4,4 +4,3 @@ $stmt = $pdo->prepare(
 );
 $stmt->execute([$table]);
 $post = $stmt->fetch();
-?>

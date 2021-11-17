@@ -45,5 +45,3 @@ if ($post->nbr !== 0) {
 } else {
     header("location:../projet_data/404");
 }
-?>
-

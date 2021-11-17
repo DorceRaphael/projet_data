@@ -7,4 +7,3 @@ $stmt = $pdo->prepare(
 );
 $stmt->execute([$offset, $limit]);
 $musics = $stmt->fetchAll(PDO::FETCH_ASSOC);
-?>

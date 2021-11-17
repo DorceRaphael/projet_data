@@ -22,4 +22,3 @@ if (is_array($match)) {
 } else {
     header("location:../../projet_data/404");
 }
-?>

@@ -11,4 +11,3 @@ for ($i=1; $i <= $totalPage ; $i++) {
 }
 $output.= "</ul>";
 echo $output;
-?>

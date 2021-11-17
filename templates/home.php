@@ -1,49 +1,37 @@
 <!--------------------------------------------- SLIDESHOW -->
 <!-- BLACK VIGNETTE -->
 <div class="vignette"></div>
-<section class="slideshow-section" >
+<section class="slideshow-section">
   <div id="slick-slider">
-  <!-- SINGLE SLIDE -->
-  <article class="slideshow-article">
-    <div
-      class="slideshow-img"
-      style="background-image: url(./assets/images/base_1_cropped.jpeg);
-      "
-    ></div>
-    <div class="slideshow-text">
-      <h3>MUSIC DATA</h3>
-      <h4>Le meilleur site pour découvrir des musiques de qualité!</h4>
-    </div>
-  </article>
-  <!-- END OF SINGLE SLIDE -->
-  <article class="slideshow-article">
-    <div
-      class="slideshow-img"
-      style="background-image: url(./assets/images/base_17_cropped.jpeg);
-      "
-    ></div>
-    <div class="slideshow-text">
-      <h3>NON STOP</h3>
-      <h4>"An other one" prendra enfin tout son sens.</h4>
-    </div>
-  </article>
-  <article class="slideshow-article">
-    <div
-      class="slideshow-img"
-      style="background-image: url(./assets/images/base_5_cropped.jpeg);
-      "
-    ></div>
-    <div class="slideshow-text">
-      <h3>NO LIMIT</h3>
-      <h4>112 ans. La durée totale de toutes les musiques disponibles!</h4>
-    </div>
-  </article>
+    <!-- SINGLE SLIDE -->
+    <article class="slideshow-article">
+      <div class="slideshow-img" style="background-image: url(./assets/images/base_1_cropped.jpeg);"></div>
+      <div class="slideshow-text">
+        <h3>MUSIC DATA</h3>
+        <h4>Le meilleur site pour découvrir des musiques de qualité!</h4>
+      </div>
+    </article>
+    <!-- END OF SINGLE SLIDE -->
+    <article class="slideshow-article">
+      <div class="slideshow-img" style="background-image: url(./assets/images/base_17_cropped.jpeg);"></div>
+      <div class="slideshow-text">
+        <h3>NON STOP</h3>
+        <h4>"An other one" prendra enfin tout son sens.</h4>
+      </div>
+    </article>
+    <article class="slideshow-article">
+      <div class="slideshow-img" style="background-image: url(./assets/images/base_5_cropped.jpeg);"></div>
+      <div class="slideshow-text">
+        <h3>NO LIMIT</h3>
+        <h4>112 ans. La durée totale de toutes les musiques disponibles!</h4>
+      </div>
+    </article>
   </div>
 </section>
 
 <!--------------------------------------------- HOME -->
 <section class="home-section">
-  <div class="section-center"  data-aos="fade-up">
+  <div class="section-center" data-aos="fade-up">
     <h2>À la recherche de <span>MUSIQUE </span>?</h2>
     <h3>
       Music Data vous propose une recherche de musique par genre et en
@@ -54,7 +42,7 @@
       <div class="genre-item">
         <div class="genre-img">
           <a href="<?= $router->generate("genre") ?>alternative">
-          <img src="./assets/images/alternative_logo.svg" alt="icone de musique alternative" />
+            <img src="./assets/images/alternative_logo.svg" alt="icone de musique alternative" />
           </a>
         </div>
         <div class="genre-text">ALTERNATIVE</div>
@@ -63,7 +51,7 @@
       <div class="genre-item">
         <div class="genre-img">
           <a href="<?= $router->generate("genre") ?>blues">
-          <img src="./assets/images/blues_logo.svg" alt="icone de musique blues" />
+            <img src="./assets/images/blues_logo.svg" alt="icone de musique blues" />
           </a>
         </div>
         <div class="genre-text">BLUES</div>
@@ -71,7 +59,7 @@
       <div class="genre-item">
         <div class="genre-img">
           <a href="<?= $router->generate("genre") ?>hiphop">
-          <img src="./assets/images/hiphop_logo.svg" alt="icone de musique hiphop" />
+            <img src="./assets/images/hiphop_logo.svg" alt="icone de musique hiphop" />
           </a>
         </div>
         <div class="genre-text">HIP HOP</div>
@@ -79,7 +67,7 @@
       <div class="genre-item">
         <div class="genre-img">
           <a href="<?= $router->generate("genre") ?>rock">
-          <img src="./assets/images/rock_logo.svg" alt="icone de musique rock" />
+            <img src="./assets/images/rock_logo.svg" alt="icone de musique rock" />
           </a>
         </div>
         <div class="genre-text">ROCK</div>
@@ -87,7 +75,7 @@
       <div class="genre-item">
         <div class="genre-img">
           <a href="<?= $router->generate("genre") ?>indie">
-          <img src="./assets/images/indie_logo.svg" alt="icone de musique indie" />
+            <img src="./assets/images/indie_logo.svg" alt="icone de musique indie" />
           </a>
         </div>
         <div class="genre-text">INDIE</div>
@@ -95,7 +83,7 @@
       <div class="genre-item">
         <div class="genre-img">
           <a href="<?= $router->generate("genre") ?>metal">
-          <img src="./assets/images/metal_logo.svg" alt="icone de musique metal" />
+            <img src="./assets/images/metal_logo.svg" alt="icone de musique metal" />
           </a>
         </div>
         <div class="genre-text">METAL</div>
@@ -103,7 +91,7 @@
       <div class="genre-item">
         <div class="genre-img">
           <a href="<?= $router->generate("genre") ?>pop">
-          <img src="./assets/images/pop_logo.svg" alt="icone de musique pop" />
+            <img src="./assets/images/pop_logo.svg" alt="icone de musique pop" />
           </a>
         </div>
         <div class="genre-text">POP</div>
@@ -111,7 +99,7 @@
       <div class="genre-item">
         <div class="genre-img">
           <a href="https://www.youtube.com/watch?v=7zbesXqL1kg">
-          <i class="fas fa-question"></i>
+            <i class="fas fa-question"></i>
           </a>
         </div>
         <div class="genre-text">?????</div>
@@ -122,7 +110,7 @@
 </section>
 
 <!--------------------------------------------- ABOUT -->
-<section class="about-section" id="about" >
+<section class="about-section" id="about">
   <article class="about-article" data-aos="fade-up">
     <div class="about-text">
       <h2>À <span>PROPOS</span> :</h2>
@@ -137,10 +125,7 @@
       </div>
     </div>
     <div class="about-img">
-      <img
-        src="./assets/images/base_16_cropped.jpeg"
-        alt="femme detendue ecoutant de la musique"
-      />
+      <img src="./assets/images/base_16_cropped.jpeg" alt="femme detendue ecoutant de la musique" />
     </div>
   </article>
 </section>
@@ -152,7 +137,7 @@
 </section>
 
 <!--------------------------------------------- CONNECTION -->
-<section class="connection-section" >
+<section class="connection-section">
   <article class="connection-article" data-aos="fade-up">
     <div class="connection-text">
       <h2><span>CONNEXION</span> :</h2>
@@ -168,10 +153,7 @@
       </div>
     </div>
     <div class="connection-img">
-      <img
-        src="./assets/images/base_7_cropped.jpeg"
-        alt="femme detendue sur son telephone"
-      />
+      <img src="./assets/images/base_7_cropped.jpeg" alt="femme detendue sur son telephone" />
     </div>
   </article>
 </section>
